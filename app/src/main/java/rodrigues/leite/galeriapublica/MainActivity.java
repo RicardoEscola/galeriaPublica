@@ -1,7 +1,10 @@
 package rodrigues.leite.galeriapublica;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.lifecycle.AndroidViewModel;
 
+import android.app.Application;
 import android.os.Bundle;
 
 public class MainActivity extends AppCompatActivity {
@@ -12,3 +15,4 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 }
+
