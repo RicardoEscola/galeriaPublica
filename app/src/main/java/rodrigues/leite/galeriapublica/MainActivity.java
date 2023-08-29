@@ -24,6 +24,8 @@ import android.Manifest;
 public class MainActivity extends AppCompatActivity {
     BottomNavigationView bottomNavigationView; // Criação dessa variavel
 
+    static  int RESULT_REQUEST_PERMISSION = 2;
+
     void setFragment(Fragment fragment){
         FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
         fragmentTransaction.replace(R.id.fragContainer, fragment);
