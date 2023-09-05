@@ -28,7 +28,7 @@ public class GalleryPagingSource extends ListenableFuturePagingSource<Integer, I
 
     @Nullable
     @Override
-    public Integer getRefreskKey(@NonNull PagingState<Integer, ImageData> pagingState) {
+    public Integer getRefreshKey(@NonNull PagingState<Integer, ImageData> pagingState) {
         //Não usamos, mas o ListenableFuturePagingSource precisa dele criado, por isso nulo
         return null;
     }

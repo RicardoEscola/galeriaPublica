@@ -13,7 +13,7 @@ public class ImageData {
     public int size;
 
     public ImageData(Uri uri, Bitmap thumb, String fileName, Date date,int size) {
-        this.uri - uri;  //endereço uri do arquivo de foto
+        this.uri = uri;  //endereço uri do arquivo de foto
         this.thumb = thumb; //img em minuatura
         this.fileName = fileName; //nome do arq foto
         this.date = date; //data que a img foi criada

@@ -114,7 +114,7 @@ public class MainActivity extends AppCompatActivity {
 
                 //caso o usuario selecione a grid vai pra la e o retorno tbm
                 switch (item.getItemId()){
-                    case R.id.listViewOp:
+                    case R.id.gridViewOp:
                         GridViewFragment gridViewFragment = GridViewFragment.newInstance();
                         setFragment(gridViewFragment);
                         break;

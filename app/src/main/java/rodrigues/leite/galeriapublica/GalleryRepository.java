@@ -14,7 +14,9 @@ import android.view.textclassifier.SelectionEvent;
 
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
+import android.Manifest;
 
 public class GalleryRepository {
 
@@ -85,7 +87,7 @@ public class GalleryRepository {
         while (cursor.moveToNext()){
             // Get values of columns for a given image.
             long id = cursor.getLong(idColumn);
-            Uri contentUri = ContentUris.withAppendedId(MediaStore.Images.EXTERNAL_CONTENT_URI, id);
+            Uri contentUri = ContentUris.withAppendedId(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, id);
             String name = cursor.getString(nameColumn);
             int dateAdded = cursor.getInt(dateAddedColumn);
             int size = cursor.getInt(sizeColumn);
